@@ -116,6 +116,7 @@ Get-Process sysmon64
     <img width="512" height="392" alt="win_net_1" src="https://github.com/user-attachments/assets/eb908b0c-0c27-4c95-9ef9-95759bbbe4fe" />
     <img width="512" height="389" alt="win_net_2" src="https://github.com/user-attachments/assets/65cd2891-1a65-41ee-aa1a-6721c1e4a3c8" />
     <img width="352" height="458" alt="win_net_3" src="https://github.com/user-attachments/assets/8ead9ca4-961b-4dfc-960b-9076e54a71f0" />
+    \
     <img width="391" height="444" alt="win_net_4" src="https://github.com/user-attachments/assets/ef5c9a76-d1bc-4383-bd91-2e5e01353d12" />
 3.Configuring Static IP on Kali Linux
   - Click the network icon in the top-right corner and select "Edit Connections."
@@ -210,11 +211,11 @@ In the Splunk search bar, use the following search queries to investigate the at
   <img width="1011" height="611" alt="splunk4" src="https://github.com/user-attachments/assets/ee170d74-b412-439f-a10f-5d33f53828e9" />
 
 ## Troubleshooting
-**Metasploit:** If the listener fails, verify that the **LHOST** (Kali IP) and **LPORT** are correctly configured in both the malware and the Metasploit handler. Ensure Windows Defender is disabled.\
-**Splunk:** If no logs appear, confirm that your search query uses the correct index (`index=endpoint`) and that logs are being forwarded from the Windows machine.
+- **Metasploit:** If the listener fails, verify that the **LHOST** (Kali IP) and **LPORT** are correctly configured in both the malware and the Metasploit handler. Ensure Windows Defender is disabled.
+- **Splunk:** If no logs appear, confirm that your search query uses the correct index (`index=endpoint`) and that logs are being forwarded from the Windows machine.
 
 ## Key Lab Learnings
-**Attacker Skills:** Learn to use tools like Metasploit and Python to create and deploy malware.\
-**Defender Skills:** Practice configuring Sysmon and Splunk to detect and analyze threats.\
-**Forensic Analysis:** Learn to analyze network connections and logs to identify an attack.
+- **Attacker Skills:** Learn to use tools like Metasploit and Python to create and deploy malware.
+- **Defender Skills:** Practice configuring Sysmon and Splunk to detect and analyze threats.
+- **Forensic Analysis:** Learn to analyze network connections and logs to identify an attack.
 
