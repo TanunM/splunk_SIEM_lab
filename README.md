@@ -41,7 +41,7 @@ The Kali Linux machine attacks the Windows VM, and logs are collected by Splunk 
 3. Extract the Sysmon files and place the `sysmonconfig.xml` file into the extracted directory.  
 4. Open PowerShell as an administrator and navigate to the Sysmon directory:
   ```powershell
-cd "C:\Users\Downloads\sysmon"
+cd C:\Users\Downloads\sysmon
 ```
 5. Verify Sysmon is running:
 ```powershell
