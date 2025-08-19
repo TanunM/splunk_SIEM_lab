@@ -219,3 +219,10 @@ In the Splunk search bar, use the following search queries to investigate the at
 - **Defender Skills:** Practice configuring Sysmon and Splunk to detect and analyze threats.
 - **Forensic Analysis:** Learn to analyze network connections and logs to identify an attack.
 
+## References
+
+1. [SOC Lab Setup and Sysmon Installation – MyDFIR](https://www.youtube.com/watch?v=kku0fVfksrk&list=PLG6KGSNK4PuBWmX9NykU0wnWamjxdKhDJ&index=2&ab_channel=MyDFIR)
+
+2. [Using Metasploit and Creating Malware – MyDFIR](https://www.youtube.com/watch?v=5iafC6vj7kM&list=PLG6KGSNK4PuBWmX9NykU0wnWamjxdKhDJ&index=3&ab_channel=MyDFIR)
+
+3. [Monitoring Logs with Splunk – MyDFIR](https://www.youtube.com/watch?v=-8X7Ay4YCoA&list=PLG6KGSNK4PuBWmX9NykU0wnWamjxdKhDJ&index=4&ab_channel=MyDFIR)
