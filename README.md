@@ -111,13 +111,34 @@ disabled = false
    - Open **VirtualBox → Settings** for each VM  
    - Click on **Network**  
    - Change **Adapter 1**'s attachment type to **Internal Network**  
-   - Give the internal network a name  
-   - Click **OK**
+   - Give the internal network a name and click **OK**
+   - This setup allows the VMs to communicate with each other on an isolated network.  
   
       <img width="512" height="315" alt="1_network_1" src="https://github.com/user-attachments/assets/373dfc0d-44a2-424c-84e5-ff126e1531dd" />
         <img width="512" height="315" alt="1_network_2" src="https://github.com/user-attachments/assets/cc8f4785-2508-483e-884b-16b8213752fb" />
 
+2. Configuring Static IP on Windows 10  
+  - Right-click the **network icon** in the taskbar and select **Network & Internet settings**.
+  - Click **Change adapter options**, right-click on **Ethernet** and select **Properties**.
+  - Double-click **Internet Protocol Version 4 (TCP/IPv4)**, select **Use the following IP address** and enter the desired IP address and subnet mask.
 
-2.
+    <img width="512" height="392" alt="win_net_1" src="https://github.com/user-attachments/assets/eb908b0c-0c27-4c95-9ef9-95759bbbe4fe" />
 
-This setup allows the VMs to communicate with each other on an isolated network.  
+    <img width="512" height="389" alt="win_net_2" src="https://github.com/user-attachments/assets/65cd2891-1a65-41ee-aa1a-6721c1e4a3c8" />
+
+    <img width="352" height="458" alt="win_net_3" src="https://github.com/user-attachments/assets/8ead9ca4-961b-4dfc-960b-9076e54a71f0" />
+
+    <img width="391" height="444" alt="win_net_4" src="https://github.com/user-attachments/assets/ef5c9a76-d1bc-4383-bd91-2e5e01353d12" />
+
+3.Configuring Static IP on Kali Linux
+  - Click the network icon in the top-right corner and select "Edit Connections."
+  - Choose "Wired connection 1," go to the "IPv4 Settings" tab, change the method to Manual, and add the desired IP address and netmask.
+  - Click Save.
+
+    <img width="512" height="162" alt="kali_net1" src="https://github.com/user-attachments/assets/f314c202-3c7d-41bc-af4a-0decacb3ac8e" />
+
+    <img width="512" height="324" alt="kali_net2" src="https://github.com/user-attachments/assets/40fe3248-3b42-464d-8411-6b6ba41c7032" />
+
+    <img width="512" height="406" alt="kali_net3" src="https://github.com/user-attachments/assets/57de4c9a-774b-4a0f-9ee4-041ddb26458e" />
+
+
