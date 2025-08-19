@@ -20,8 +20,8 @@ The objective of this lab is to:
 | **Virtualization Software**   | VirtualBox                                                                  |
 
 ## Network Topology
-Below is a simple diagram that illustrates the network topology for this lab setup:
-[Kali Linux (Attacker)] ---> [Windows 10 VM (Target)] ---> [Splunk (Log Monitoring)]
+Below is a simple diagram that illustrates the network topology for this lab setup:\
+[Kali Linux (Attacker)] ---> [Windows 10 VM (Target)] ---> [Splunk (Log Monitoring)]\
 The Kali Linux machine attacks the Windows VM, and logs are collected by Splunk for analysis.
 
 ## Step 1: Setting Up Virtual Machines
@@ -112,6 +112,7 @@ Get-Process sysmon64
   - Right-click the **network icon** in the taskbar and select **Network & Internet settings**.
   - Click **Change adapter options**, right-click on **Ethernet** and select **Properties**.
   - Double-click **Internet Protocol Version 4 (TCP/IPv4)**, select **Use the following IP address** and enter the desired IP address and subnet mask.
+
     <img width="512" height="392" alt="win_net_1" src="https://github.com/user-attachments/assets/eb908b0c-0c27-4c95-9ef9-95759bbbe4fe" />
     <img width="512" height="389" alt="win_net_2" src="https://github.com/user-attachments/assets/65cd2891-1a65-41ee-aa1a-6721c1e4a3c8" />
     <img width="352" height="458" alt="win_net_3" src="https://github.com/user-attachments/assets/8ead9ca4-961b-4dfc-960b-9076e54a71f0" />
