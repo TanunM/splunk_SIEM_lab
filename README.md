@@ -1,7 +1,7 @@
-# SOC-Home-Lab
+# splunk-SIEM-Lab
 
 ## Introduction
-This document provides a guide for setting up a Security Operations Center (SOC) home lab. The lab consists of two virtual machines (VMs): an attacker machine running Kali Linux and a victim machine running Windows 10. The primary objective of this lab is to simulate real-world security scenarios, analyze attacks, and enhance practical cybersecurity skills.
+This document provides a guide for setting up a Security Operations Center lab. The lab consists of two virtual machines: an attacker machine running Kali Linux and a victim machine running Windows 10. The primary objective of this lab is to simulate real-world security scenarios, analyze attacks, and enhance practical cybersecurity skills.
 
 ## Objective
 The objective of this lab is to:  
@@ -16,7 +16,7 @@ The objective of this lab is to:
 |-----------------------------|-----------------------------------------------------------------------------|
 | **Operating Systems**        | Windows 10 ISO, Kali Linux Pre-built VM                                      |
 | **System Requirements**      | RAM: 8GB or Higher, Internet Connectivity for downloads/updates |
-| **Logging & Monitoring Tools** | Splunk (SIEM & security analytics), Sysmon (System monitoring & event logging) |
+| **Logging & Monitoring Tools** | Splunk, Sysmon |
 | **Virtualization Software**   | VirtualBox                                                                  |
 
 ## Network Topology
